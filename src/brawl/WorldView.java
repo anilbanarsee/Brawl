@@ -34,11 +34,16 @@ public class WorldView extends JPanel{
     public void paintComponent(Graphics g){
         
         Graphics2D g2d = (Graphics2D) g;
+        super.paintComponent(g);
         
         ArrayList<Terrain> terrain = world.getTerrain();
-        
+        ArrayList<Player> players = world.getPlayers();
         for(Terrain t: terrain){
             Shape shape = t.getDrawable();
+            g2d.fill(shape);
+        }
+        for(Player p: players){
+            Shape shape = p.getDrawable();
             g2d.fill(shape);
         }
         
