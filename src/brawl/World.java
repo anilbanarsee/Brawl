@@ -78,7 +78,7 @@ public class World {
             ArrayList<double[]> impactPoints = new ArrayList<>();
             for(Terrain t: terrain){
                 
-                impactPoints.addAll(t.getImpactPoints(moveVector, p.x, p.y));
+               // impactPoints.addAll(t.getImpactPoints(moveVector, p.x, p.y));
                 
             }
         }

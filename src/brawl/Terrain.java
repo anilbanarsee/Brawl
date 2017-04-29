@@ -37,7 +37,7 @@ public class Terrain {
             
             p1=p2;
         }
-        return impactPoints;
+        return closestEdge;
         
     }
     
